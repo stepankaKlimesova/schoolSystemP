@@ -30,6 +30,8 @@ public class HelloController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+        listView.getItems().add("name                              subject                              grade");
+
         comboGrades.getItems().add(1);
         comboGrades.getItems().add(2);
         comboGrades.getItems().add(3);
@@ -51,7 +53,7 @@ public class HelloController implements Initializable {
     }
 
     public void studentInit() {
-       Student student = new Student((String) comboStudent.getSelectionModel().getSelectedItem(), (Subjects) comboSubjects.getSelectionModel().getSelectedItem());
+       Student student = new Student((String) comboStudent.getSelectionModel().getSelectedItem(), (Subjects) comboSubjects.getSelectionModel().getSelectedItem(), (Integer) comboGrades.getSelectionModel().getSelectedItem());
        studentList.getItems().add(student.getName());
        comboChooseSubject.getItems().add(student.getSubjects());
     }

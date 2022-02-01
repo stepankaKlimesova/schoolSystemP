@@ -23,5 +23,6 @@
       <Label layoutX="54.0" layoutY="150.0" text="subjects" />
       <Label layoutX="312.0" layoutY="79.0" text="subject" />
       <ComboBox fx:id="comboChooseSubject" layoutX="312.0" layoutY="100.0" prefWidth="150.0" />
+      <ListView fx:id="listView" layoutX="312.0" layoutY="147.0" prefHeight="192.0" prefWidth="367.0" />
    </children>
 </AnchorPane>

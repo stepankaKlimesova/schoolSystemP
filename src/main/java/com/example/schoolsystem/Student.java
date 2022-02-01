@@ -4,12 +4,10 @@ public class Student {
 
     private String name;
     private Subjects subjects;
-    private int grades;
 
-    public Student(String name, Subjects subjects, int grades) {
+    public Student(String name, Subjects subjects) {
         this.name = name;
         this.subjects = subjects;
-        this.grades = grades;
     }
 
     public String getName() {
@@ -28,11 +26,9 @@ public class Student {
         this.subjects = subjects;
     }
 
-    public int getGrades() {
-        return grades;
-    }
+    @Override
+    public String toString() {
+        return name + " " + subjects;
 
-    public void setGrades(int grades) {
-        this.grades = grades;
     }
 }

@@ -4,13 +4,15 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
 public class HelloController implements Initializable {
-
+    @FXML
+    private ListView listView;
     @FXML
     private ComboBox studentList;
     @FXML
@@ -27,11 +29,12 @@ public class HelloController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        comboGrades.getItems().add((Integer)1);
-        comboGrades.getItems().add((Integer)2);
-        comboGrades.getItems().add((Integer)3);
-        comboGrades.getItems().add((Integer)4);
-        comboGrades.getItems().add((Integer)5);
+
+        comboGrades.getItems().add(1);
+        comboGrades.getItems().add(2);
+        comboGrades.getItems().add(3);
+        comboGrades.getItems().add(4);
+        comboGrades.getItems().add(5);
 
         comboSubjects.getItems().add(Subjects.MATH);
         comboSubjects.getItems().add(Subjects.CZECH);
@@ -48,7 +51,7 @@ public class HelloController implements Initializable {
     }
 
     public void studentInit() {
-       Student student = new Student(tfStudent.getText(), (Subjects) comboSubjects.getSelectionModel().getSelectedItem(), (Integer) comboGrades.getSelectionModel().getSelectedItem());
+       Student student = new Student((String) comboStudent.getSelectionModel().getSelectedItem(), (Subjects) comboSubjects.getSelectionModel().getSelectedItem());
        studentList.getItems().add(student.getName());
        comboChooseSubject.getItems().add(student.getSubjects());
     }

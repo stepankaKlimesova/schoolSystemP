@@ -8,21 +8,15 @@
       <ComboBox fx:id="comboGrades" layoutX="57.0" layoutY="254.0" prefWidth="150.0" />
       <TextField fx:id="tfStudent" layoutX="57.0" layoutY="52.0" />
       <Button fx:id="buttAdd" layoutX="14.0" layoutY="52.0" mnemonicParsing="false" onAction="#addStudent" text="add" />
-      <Button fx:id="buttOk" layoutX="178.0" layoutY="290.0" mnemonicParsing="false" onAction="#studentInit" text="ok" />
+      <Button fx:id="buttOk" layoutX="178.0" layoutY="303.0" mnemonicParsing="false" onAction="#studentInit" text="ok" />
       <ComboBox fx:id="comboStudent" layoutX="57.0" layoutY="99.0" prefWidth="150.0" />
-      <Button fx:id="buttEdit" layoutX="585.0" layoutY="87.0" mnemonicParsing="false" text="edit" />
-      <ComboBox fx:id="studentList" layoutX="312.0" layoutY="52.0" prefWidth="150.0" />
-      <TextField fx:id="tfAverage" layoutX="529.0" layoutY="52.0" />
-      <Button fx:id="buttDelete" layoutX="629.0" layoutY="87.0" mnemonicParsing="false" text="delete" />
+      <Button fx:id="buttEdit" layoutX="642.0" layoutY="303.0" mnemonicParsing="false" text="edit" />
+      <Button fx:id="buttDelete" layoutX="544.0" layoutY="303.0" mnemonicParsing="false" text="delete" />
       <Label layoutX="57.0" layoutY="28.0" text="student's name" />
       <Label layoutX="57.0" layoutY="230.0" text="grades" />
       <Label layoutX="57.0" layoutY="79.0" text="student's list" />
-      <Label layoutX="312.0" layoutY="28.0" text="student's list" />
-      <Label layoutX="529.0" layoutY="28.0" text="average" />
       <ComboBox fx:id="comboSubjects" layoutX="57.0" layoutY="174.0" prefWidth="150.0" />
       <Label layoutX="54.0" layoutY="150.0" text="subjects" />
-      <Label layoutX="312.0" layoutY="79.0" text="subject" />
-      <ComboBox fx:id="comboChooseSubject" layoutX="312.0" layoutY="100.0" prefWidth="150.0" />
-      <ListView fx:id="listView" layoutX="312.0" layoutY="147.0" prefHeight="192.0" prefWidth="367.0" />
+      <ListView fx:id="listView" layoutX="257.0" layoutY="52.0" prefHeight="230.0" prefWidth="422.0" />
    </children>
 </AnchorPane>

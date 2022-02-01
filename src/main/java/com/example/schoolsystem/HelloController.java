@@ -14,10 +14,6 @@ public class HelloController implements Initializable {
     @FXML
     private ListView listView;
     @FXML
-    private ComboBox studentList;
-    @FXML
-    private ComboBox comboChooseSubject;
-    @FXML
     private ComboBox comboGrades;
 
     @FXML

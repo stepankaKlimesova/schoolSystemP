@@ -1,2 +1,2 @@
 # schoolSystemP
-https://images-ext-1.discordapp.net/external/Le06Y3nGKk1QEmKWRYPJgu7Zq8RR19ejb2eaFKuAd2Q/https/media.discordapp.net/attachments/688812076734480439/937820753036976138/63flpq.gif
+![63flpq](https://user-images.githubusercontent.com/90748524/152088254-3f034e28-ad69-4663-bb98-11ba21772473.gif)

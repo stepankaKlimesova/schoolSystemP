@@ -11,7 +11,7 @@
       <Button fx:id="buttOk" layoutX="178.0" layoutY="303.0" mnemonicParsing="false" onAction="#studentInit" text="ok" />
       <ComboBox fx:id="comboStudent" layoutX="57.0" layoutY="99.0" prefWidth="150.0" />
       <Button fx:id="buttEdit" layoutX="642.0" layoutY="303.0" mnemonicParsing="false" text="edit" />
-      <Button fx:id="buttDelete" layoutX="544.0" layoutY="303.0" mnemonicParsing="false" text="delete" />
+      <Button fx:id="buttDelete" layoutX="544.0" layoutY="303.0" mnemonicParsing="false" onAction="#deleteStudent" text="delete" />
       <Label layoutX="57.0" layoutY="28.0" text="student's name" />
       <Label layoutX="57.0" layoutY="230.0" text="grades" />
       <Label layoutX="57.0" layoutY="79.0" text="student's list" />

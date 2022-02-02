@@ -54,4 +54,7 @@ public class HelloController implements Initializable {
        comboChooseSubject.getItems().add(student.getSubjects());
     }
 
+    public void deleteStudent() {
+       listView.getItems().remove(listView.getSelectionModel().getSelectedItem());
+    }
 }

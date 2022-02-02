@@ -2,16 +2,18 @@ package com.example.schoolsystem;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class HelloController implements Initializable {
+
+    private Map<String, Integer> gradesList = new HashMap<String, Integer>();
+    private ArrayList<Integer> grades = new ArrayList();
+
     @FXML
     private ComboBox<Subjects> comboSubjects;
     @FXML
@@ -49,6 +51,8 @@ public class HelloController implements Initializable {
         Student student = new Student(comboStudent.getSelectionModel().getSelectedItem(), comboSubjects.getSelectionModel().getSelectedItem(), comboGrades.getSelectionModel().getSelectedItem());
         listView.getItems().add(student);
         tfStudent.setText("");
+        gradesList.put(student.getName(), student.getGrades());
+        System.out.println(gradesList.get(student.getName()));
     }
 
     public void deleteStudent() {
